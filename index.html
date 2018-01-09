@@ -4,25 +4,34 @@
 		<meta charset="utf-8">
 		<title>New Notes</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 	
 	<body>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Notes</a>
+						<a class="navbar-brand" href="#">Notes</a>
 				</div>
 			</div>
 		</nav>
 				
 	  <div class="container">
 	  	<div class="jumbotron">
-	  		<h2 class="display-2" id="title">Title</h2>
-	  		<p class="description_container" id="description">Description</p>
-	  		<button type="button" class="btn btn-primary">ClickMe</button>
+		  	<form id="form">
+					<div class="form-group col-md-12">
+						<h2 class="display-2" id="title">Title <input type="text" class="note-title-input" id='input' placeholder="title"></h2>
+						<!-- <small id="note-title-hint" class="form-text text-muted">Write Note Title</small> -->
+						<h2 class="display-2" id="content">Content <input type="text" class="note-content-input" id='input' placeholder="Write a Content for your note"></h2>
+						
+						<!-- <small id="note-content-hint" class="form-text text-muted">Write Note</small> -->
+					</div>
+					<button type="submit" id='create-note' class="btn btn-info">Create Note</button>
+		  	</form>
 	  	</div>
-	  
 
+	  
+			<p class="description_container" id="description">Note</p>
 		  <div class="row">
 		    <ul class="list-group">
 		        <li class="list-group-item" id="1-note">

@@ -1,0 +1,5 @@
+
+.note-title-input,
+.note-content-input{
+	width: -webkit-fill-available;
+}
