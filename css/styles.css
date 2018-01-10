@@ -1,5 +1,13 @@
 
-.note-title-input,
-.note-content-input{
+.title-form,
+.content-form{
 	width: -webkit-fill-available;
+}
+
+input, textarea{
+	margin-top: 10px;
+}
+
+.btn{
+	margin-left: 15px;
 }
